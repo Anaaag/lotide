@@ -62,5 +62,10 @@ const middle = function(array) {
   let midElement = [];
   if (array.length === 1 || array.length === 2){
     midElement = [];
-  } else if ()
+  } else if (array.length % 2 === 1) {
+    midElement.push(array[Math.flloor(array.length / 2)])
+  } else if (array.length % 2 === 0) {
+    midElement.push([array.length / 2 - 1], [array.length / 2])
+  }
+  return midElement
 }
