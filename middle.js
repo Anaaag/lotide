@@ -1,6 +1,6 @@
 
 //will take in an array and return the middle-most element(s) of the given array
-//return an array with only middle element(s) 
+//return an array with only middle element(s)
 //for arrays with one or two elements return empty
 //for arrays with odd number of elements return single middle element
 //for arrays with even number of elements return two elements in the middle
@@ -18,6 +18,7 @@ const eqArrays = function(arrOne, arrTwo) {
   }
 };
 
+
 const assertArraysEqual = function(arrOne, arrTwo) {
   if (eqArrays(arrOne, arrTwo)) {
     console.log(`✅✅Assertion Passed: ${arrOne} === ${arrTwo}`);
@@ -27,45 +28,25 @@ const assertArraysEqual = function(arrOne, arrTwo) {
 };
 
 
-
-middle([1]) // => []
-middle([1, 2]) // => []
-middle([1, 2, 3]) // => [2]
-middle([1, 2, 3, 4, 5]) // => [3]
-middle([1, 2, 3, 4]) // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
-
-array.length % 2 === 1
-const middle = function(array) {
-  let newArray = [];
-  let middleElement = array[Math.floor(array.length/2)];
-  newArray.push(middleElement)
-  return newArray;
-  }
-//Odd 
-array.length % 2 === 0 
-const middle = function(array) {
-  let newArray = [];
-  let middleElement = array[Math.floor(array.length / 2) 
-  newArray.push(middleElement
-  return newArray;
-}
-//even
-
-// one or two elements
-let newArray = [];
-if (array.length === 1 || array.length === 2) {
-  return newArray;
-}
-
-const middle = function(array) {
+const middle = function(arrOne) {
   let midElement = [];
-  if (array.length === 1 || array.length === 2){
+  if (arrOne.length === 1 || arrOne.length === 2) {
     midElement = [];
-  } else if (array.length % 2 === 1) {
-    midElement.push(array[Math.flloor(array.length / 2)])
-  } else if (array.length % 2 === 0) {
-    midElement.push([array.length / 2 - 1], [array.length / 2])
+  } else if (arrOne.length % 2 === 1) {
+    midElement.push(arrOne[Math.floor(arrOne.length / 2)]);
+  } else if (arrOne.length % 2 === 0) {
+    midElement.push(arrOne[arrOne.length / 2 - 1], arrOne[arrOne.length / 2]);
+    
   }
-  return midElement
-}
+  return midElement;
+};
+
+assertArraysEqual(middle([1]), []);
+assertArraysEqual(middle([1, 2, 3,]), [2]);
+assertArraysEqual(middle([1, 2, 3, 4,]), [2, 3]);
+
+
+
+
+
+
