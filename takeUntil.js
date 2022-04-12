@@ -52,3 +52,5 @@ console.log(results2);
 assertArraysEqual(takeUntil(numbers, x =>  x > 10), [2, 5]);
 assertArraysEqual(takeUntil(listOfFriends, x => x === 'jenna'), ['ana', 'kait']);
 assertArraysEqual(takeUntil(numbers2, x => x % 2 === 1), [2, 8]);
+
+module.exports = takeUntil;
