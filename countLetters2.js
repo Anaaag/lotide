@@ -20,5 +20,4 @@ const countLetters = function(sentence) {
 }
 countLetters("lighthouse in the house");
 
-// Function should take in a sentence ("string")
-//Return a count of each of the letters in that sentence
+module.exports = countLetters;

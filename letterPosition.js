@@ -40,7 +40,7 @@ const letterPositions = function(string) {
   return results;
 };
 
-console.log(letterPositions("cat in hat"));
+//console.log(letterPositions("cat in hat"));
 
 
 
@@ -48,3 +48,5 @@ assertArraysEqual(letterPositions("cat in hat").c, [0]);
 assertArraysEqual(letterPositions("cat in hat").h, [7]);
 assertArraysEqual(letterPositions("cat in hat").i, [4]);
 assertArraysEqual(letterPositions("cat in hat").n, [5]);
+
+module.exports = letterPosition;

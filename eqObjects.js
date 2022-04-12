@@ -35,3 +35,5 @@ const eqObjects = function(obj1, obj2) {
   }
 
 };
+
+module.exports = eqObjects;

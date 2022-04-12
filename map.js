@@ -42,7 +42,7 @@ const map = function(array, callback) {
 };
 
 const results = map(words, word => word[0]);
-console.log(results);
+//console.log(results);
 
 
 //Tests
@@ -51,4 +51,4 @@ assertArraysEqual(map(numbers, n => n * 2),[2,4,6,8]);
 assertArraysEqual(map(words, word => word.length), [6, 7, 2, 5, 3]);
 
 
-
+module.exports = map; 
